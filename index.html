@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <!-- JS -->
+  <script src="./js/script.js" defer></script>
+
+  <!--Sweet Alert-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <title>Tañi Cerámica</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/logo-sinFondo.png"/>
+</head>
+<body>
+  <header class="navbar">
+    <nav class="navbar bg-body-tertiary">
+      <div class="cont-logo">
+        <a class="navbar-brand" href='./index.html'>
+          <img src="./assets/logo.png" alt="Tañi Cerámica Logo" class="foto-logo">
+        </a>
+      </div>
+    </nav>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#cuidados">Cuidados</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#" class="cart" id="viewCart">Carrito <i class="bi bi-cart-fill"></i> <span class="numerito">0</span></a></li>
+        <li><a href="#" class="user" id="loginBtn">Iniciar sesión <i class="bi bi-person-fill"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="welcome">
+      <h1>Tañi Cerámica</h1>
+      <p>Descubre nuestra colección de productos de cerámica handmade.</p>
+      <a href="#productos" class="btn">Comprar Ahora</a>
+    </section>
+
+    <section id="productos" class="products">
+      <h2>Nuestros Productos</h2>
+      <div id="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="Buscar">
+      </div>
+      <div id='produjs' class="product-grid">
+      </div>
+    </section>
+
+    <section id="nosotros" class="about">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una emprendimiento dedicada a la creación de productos de cerámica handmade con amor y pasión.</p>
+      <p>
+        En corazón de la ciudad de Córdoba, Argentina, nació a fines de 2023 un sueño hecho realidad: Tañi Cerámica. 
+        Inspirado por la rica tradición artesanal de la región y el deseo de llevar belleza y autenticidad a los hogares, 
+        este emprendimiento emergió como un faro de creatividad y pasión por lo hecho a mano.
+      </p>
+      <p>Con un enfoque en la creación de piezas unicas, Tañi Cerámica se destaca por su compromiso con 
+        la artesanía de calidad y la atención al detalle. Cada producto es moldeado con amor y cuidado.
+      </p>
+      <p>
+        Lo que distingue a Tañi Cerámica es su busqueda en conectar con las personas en sus propios espacios. 
+        Desde tazas de café que invitan a la contemplación hasta platos que celebran la comunión en la mesa, 
+        cada pieza es un testimonio del arte en la vida cotidiana.
+      </p>
+      <p>
+        Con el propósito de embellecer hogares y corazones, Tañi Cerámica se embarca en un viaje hacia la calidez
+        y la intimidad de los espacios domésticos. Desde su modesto comienzo en la capital cordobesa hasta el
+        horizonte ilimitado de posibilidades, este emprendimiento promete seguir tejiendo su legado de belleza, 
+        autenticidad y conexión humana a través de sus creaciones de cerámica hechas a mano.
+      </p>
+    </section>
+
+    <section id="cuidados" class="care">
+      <h2>Cuidados de nuestras piezas</h2>
+      <h3>Hola! Gracias por elegir nuestras piezas para acompañarte en tu dia a dia.</h3>
+      <h3>A continuacion algunos puntos a tener en cuenta con respecto al cuidado y uso diario de tus piezas! 🥰</h3>
+
+      <p>
+        🤎 La superficie es antiadherente, no necesitas usar agregados como aceite o aceite en aerosol para despegar 
+        preparaciones.
+      </p>
+      <p>
+        🤎 Puede conservar el calor y el frio de las preparaciones por más tiempo que el resto de los materiales
+        que podes encontrar dentro de cocina.
+      </p>
+      <p>
+        🤎 Las piezas cerámicas son aptas horno, horno eléctrico, microondas y lavavajillas. ⚠⚠ Cuando uses la pieza 
+        con preparaciones calientes, o la saques del horno a alta temperatura usa una superficie de apoyo antichoque 
+        térmico, puede ser bandeja de madera, individual de yute, o tela. ⚠⚠ De esta forma disminuís el cambio brusco de
+        temperatura y las piezas no se craquelan, si bien esto no afecta su uso, haciendo uso de estos tips hacemos el 
+        objeto más perdurable.
+      </p>
+      <p>
+        🤎 Las piezas cerámicas que vendemos nunca van a fuego directo, ya sea de la hornalla de la cocina o del carbón
+        de la parrilla o de horno de leña, ya que esto dañaría la pieza y su esmalte.
+      </p>
+      <p>
+        🤎 No las dejes en remojo por mucho tiempo, puede que la cerámica absorba humedad.
+      </p>
+      <p>
+        Muchas Gracias por leer! Cualquier duda que tengas, no dudes en consultar✨💋
+      </p>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contáctanos</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <ul>
+            <li><i class="fab fa-facebook-f"></i><i class="bi bi-facebook"> Facebook</i></li>
+            <li><i class="fab fa-instagram"></i><i class="bi bi-instagram"> Instagram</i></li>
+            <li><i class="fas fa-envelope"></i><i class="bi bi-envelope-paper-heart-fill"> Mail</i></li>
+            <li><i class="fas fa-phone-alt"></i><i class="bi bi-whatsapp"> Whatsapp</i></li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button class="btn" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="menu-navegacion-footer">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cuidados">Cuidados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <p>&copy; 2024 Tañi Cerámica. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Inicio de sesión -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Iniciar sesión</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Correo Electrónico" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit" class="btn">Iniciar sesión</button>
+      </form>
+      <p>¿No tienes una cuenta? <a href="#" id="registerLink">Regístrate</a></p>
+    </div>
+  </div>
+
+  <!-- Registro de usuario -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Regístrate</h2>
+      <form id="registerForm">
+        <input type="text" id="username" placeholder="Nombre de Usuario" required>
+        <input type="email" id="registerEmail" placeholder="Correo Electrónico" required>
+        <input type="password" id="registerPassword" placeholder="Contraseña" required>
+        <button type="submit" class="btn">Registrarse</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Carrito -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Carrito de Compras</h2>
+      <div id="cartItems">
+      </div>
+      <div id="cartTotal">
+        <h3>Total: $<span id="totalAmount">0</span></h3>
+        <button id="checkout" class="btn">Pagar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

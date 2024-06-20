@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'theSeasons';
+    src: url('../font/Fontspring-DEMO-theseasons-reg.otf');
+}
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  input {
+    border: 1px solid #e07a7a;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3e2712;
+    background-color: #f9e1e1;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3e2712;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #f9e1e1;
+    padding: 20px;
+  }
+
+  nav{
+    margin-right: 50px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  nav li {
+    margin: 30px 20px;
+  }
+  
+  nav a {
+    color: #3e2712;
+  }
+  
+  .cart {
+    color: #e07a7a;
+    font-weight: bold;
+  }
+
+  /* Estilos de la sección principal */
+  .welcome, .products, .about, .care, .contact {
+    padding: 60px 20px;
+  }
+  
+  .welcome {
+    background-color: #f9e1e1;
+    text-align: center;
+    background-image: url('../assets/fondo-inicio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  .welcome h1 {
+    font-family: 'theSeasons';
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome p {
+    margin-bottom: 40px;
+  }
+  
+  .btn, .btn-add-cart {
+    display: inline-block;
+    background-color: #e07a7a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .btn-add-cart{
+    border: none;
+  }
+
+  .btn-add-cart:hover{
+    background-color: #f9e1e1;
+    color: #3e2712;
+
+  }
+
+  .products, .care, .contact {
+    background-color: #fff;
+  }
+
+  
+  .products h2, .about h2, .care h2, .contact h2, .modal h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .products h5 {
+    color: #3e2712;
+  }
+
+  .about {
+    background-color: #c2b49a
+  }
+
+  .about p {
+    text-align: justify;
+  }
+
+  .care h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .care p {
+    text-align: justify;
+  }
+  
+  /* Estilos del formulario de contacto */
+  .contact {
+    background-color: #c2b49a;
+    padding: 60px 20px;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    flex: 0 0 30%;
+    background-color: #f9e1e1;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info ul {
+    list-style-type: none;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+  }
+  
+  .contact-form {
+    flex: 0 0 65%;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #e07a7a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #f9e1e1;
+    color: #3e2712;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .menu-navegacion-footer{
+    display: flex;
+    justify-content: end;
+
+  }
+
+  .menu-navegacion-footer li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.2rem;
+    
+  }
+
+  .menu-navegacion-footer nav ul li a{
+    text-decoration: none;
+      
+  }
+
+  .menu-navegacion-footer a{
+    font-size: small;
+    color: #3e2712;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .navbar{
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    .cont-logo{
+      margin-left: 5px;
+    }
+
+    .cont-logo img{
+      width: 70%;
+    }
+
+    .welcome h1 {
+      font-size: 61px;
+    }
+  
+    .products, .about, .care, .contact {
+      padding: 40px 20px;
+    }
+
+    .about p {
+      text-align: justify;
+    }
+
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-info {
+      flex-basis: auto;
+      margin-bottom: 30px;
+    }
+  
+    .contact-form {
+      flex-basis: auto;
+    }
+
+    .menu-navegacion-footer{
+      display: flex;
+      justify-content: center;
+  
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    .welcome h1 {
+      font-size: 52px;
+    }
+  
+    .products h2, .about h2, .care h2, .contact h2 {
+      font-size: 25px;
+    }
+
+    .about p {
+      text-align: justify;
+    }
+  }
+
+/*Tamaño logo */
+.cont-logo{
+    width: 150px;
+    margin-left: 50px;
+}
+.cont-logo img{
+    width: 100%;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(40 40 40 / 0%) !important;
+}
+
+.products div{
+  margin: 20px;
+}
+
+
+/* Contenedor de productos */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Estilo individual de cada producto */
+.product-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las imágenes */
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+/* Títulos y párrafos */
+.product-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.product-card h4 {
+  font-size: 1em;
+  color: #777;
+}
+
+.product-card p {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Contenedor de elementos del carrito */
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Estilos para las imágenes del carrito */
+.cart-item img {
+  max-width: 80px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 10px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Detalles del artículo del carrito */
+.cart-item div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Nombre del producto en el carrito */
+.cart-item h4 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+/* Precio del producto en el carrito */
+.cart-item p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Botón eliminar del carrito */
+.btn-remove-cart {
+  background-color: #e07a7a;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-remove-cart:hover {
+  background-color: #791212;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .cart-item img {
+      margin-bottom: 10px;
+  }
+
+  .cart-item div {
+      align-items: flex-start;
+  }
+}
+
+/* Botón de cerrar el carrito */
+.close{
+  background: none;
+  border: none;
+  font-size: 4em; /* Ajusta el tamaño de la fuente para hacer el ícono más grande */
+  color: #3e2712;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #e07a7a; /* Cambia el color al pasar el cursor */
+}
